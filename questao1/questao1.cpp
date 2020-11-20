@@ -34,7 +34,7 @@ void Adicionar()
     cout << endl;
 
     cout << "NOME: ";
-    cin >> contato[counter].nome;
+    scanf("%s", contato[counter].nome);
 
     cout << endl;
     cout << "IDADE: ";
@@ -64,41 +64,37 @@ void Pesquisar()
     cout << endl;
 
     char nomeContato[20];
-    int k;
 
     cout << "DIGITE O NOME DO CONTATO QUE DESEJA PESQUISAR: ";
-    cin >> nomeContato;
+    scanf("%s", nomeContato);
 
-    for (int i = 0; i < 100; i++)
+    for (int i = 0; i < counter; i++)
     {
         if (strcmp(contato[i].nome, nomeContato) == 0)
         {
-            k = i;
             system("cls");
             cout << "AGENDA ELETRONICA" << endl;
             cout << endl;
             cout << "PESQUISAR CONTATO" << endl;
             cout << endl;
             cout << endl;
-            cout << "NOME: " << contato[k].nome << endl;
-            cout << "IDADE: " << contato[k].idade << endl;
-            cout << "TELEFONE: " << contato[k].telefone << endl;
-            cout << "E-MAIL: " << contato[k].email << endl;
+            cout << "NOME: " << contato[i].nome << endl;
+            cout << "IDADE: " << contato[i].idade << endl;
+            cout << "TELEFONE: " << contato[i].telefone << endl;
+            cout << "E-MAIL: " << contato[i].email << endl;
             cout << endl;
-            break;
-        }
-        else
-        {
-            system("cls");
-            cout << "AGENDA ELETRONICA" << endl;
-            cout << endl;
-            cout << "PESQUISAR CONTATO" << endl;
-            cout << endl;
-            cout << endl;
-            cout << "O CONTATO PESQUISADO NAO EXISTE. TENTE NOVAMENTE OU ADICIONE O CONTATO NA AGENDA" << endl;
-            break;
+            system("pause");
+            return;
         }
     }
+
+    system("cls");
+    cout << "AGENDA ELETRONICA" << endl;
+    cout << endl;
+    cout << "PESQUISAR CONTATO" << endl;
+    cout << endl;
+    cout << endl;
+    cout << "O CONTATO PESQUISADO NAO EXISTE. TENTE NOVAMENTE OU ADICIONE O CONTATO NA AGENDA" << endl;
 
     cout << endl;
     cout << endl;
