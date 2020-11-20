@@ -9,7 +9,8 @@ void adicionar();
 void carregaArquivo();
 
 typedef struct {
-  int CPF, idade, ID;
+  int idade, ID;
+  long int CPF;
   char nome[50], sexo[10];
   float horas_trabalhadas, valor_hora_trabalhada, salario_liquido;
 }FUNCIONARIO;
