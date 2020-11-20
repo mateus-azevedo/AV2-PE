@@ -1,3 +1,14 @@
+/* 
+  856 - PROGRAMAÇÃO ESTRUTURADA – Prof Andre Cotelli Do Espirito Santo
+
+            NOMES                  (MATRICULAS)
+
+  VINÍCIUS SILVA DE OLIVEIRA       (2020101398)
+  RHUAN GONZAGA CUNHA FRANCISCO    (2020100052)
+  MATEUS SANTOS DE AZEVEDO         (2020100086)
+  GABRIEL MEDRADO DE SOUZA         (2020101619)
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
