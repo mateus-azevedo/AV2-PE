@@ -14,7 +14,7 @@
 #include<string.h>
 #include<iostream> 
 using namespace std; 
-#define NUMERO_DE_FUNCIONARIO 3
+#define NUMERO_DE_FUNCIONARIO 50
 
 void adicionar();
 void carregaArquivo();
@@ -416,7 +416,7 @@ void carregaArquivo()
   }
   else
   {
-    quantidade_funcionarios_registrados = atualizaQuantidade(nome_arquivo); // GAMBIARRA
+    quantidade_funcionarios_registrados = atualizaQuantidade(nome_arquivo); // FEATURE ;)
 
     for (int gravado = 0; gravado < quantidade_funcionarios_registrados; gravado++)
     {

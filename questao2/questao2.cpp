@@ -14,7 +14,7 @@
 #include <iostream>
 #include <string.h>
 using namespace std;
-#define NUMERO_ALUNO 3
+#define NUMERO_ALUNO 50
 
 void Adicionar();
 void Carregar();
