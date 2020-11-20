@@ -270,9 +270,14 @@ void Exibir()
 
       case 5:
         system("cls");
-        printf("TODOS OS ALUNOS\n");
+        printf("TODOS OS ALUNOS\n\n");
         for (int cadastrado = 0; cadastrado < quantidade_alunos_registrados; cadastrado++)
-          printf("\n\tAluno: %d\n", aluno[cadastrado].matricula);
+        {
+          printf("ALUNO: %s\n", aluno[cadastrado].nome);
+          printf("MATRICULA: %d\n", aluno[cadastrado].matricula);
+          printf("MEDIA: %.1f\n\n", notas[cadastrado][3]);
+        }
+
         system("pause");
         break;
 
